@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sazón Urbana</title>
-    <link rel="stylesheet" href="./output.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Remix Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--Estilos Tailwind-->
+    <link href="/dist/output.css" rel="stylesheet">
 </head>
+</head>
+
 <body>
-    <h1 class="text-2xl bg-slate-600">hol</h1>
+    <!--Inicio Header y Nav-->
+    <header class="bg-red-600 fixed top-0 left-0 w-full z-50">
+
+        <nav class="container relative h-14 flex justify-between items-center">
+
+            <div class="">
+                <a href="" class="text-2xl uppercase font-oswald  ">Sazón <span class="text-amber-200">Urbana</span></a>
+            </div>
+
+            <div id="nav-menu"
+                class="hidden absolute top-0 left-0 w-full py-14 bg-red-600 border-b border-amber-200 md:block md:static md:border-none md:w-auto md:py-0 md:ml-auto">
+                <ul class="flex flex-col text-center gap-3 md:flex-row">
+                    <li><a href="#home" class=" nav-link hover:text-amber-200 ease-in duration-200">Inicio</a></li>
+                    <li><a href="#about" class="nav-link hover:text-amber-200 ease-in duration-200">Conócenos</a></li>
+                    <li><a href="#menu" class="nav-link hover:text-amber-200 ease-in duration-200">Menú</a></li>
+                    <li><a href="#review" class="nav-link hover:text-amber-200 ease-in duration-200">Reseñas</a></li>
+                    <li><a href="#contact" class="nav-link hover:text-amber-200 ease-in duration-200">Contacto</a></li>
+                </ul>
+
+                <div id="close-icon" class="absolute top-[0.7rem] right-4 text-2xl cursor-pointer md:hidden">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-5">
+                <i class="ri-moon-line cursor-pointer ml-4 text-xl"></i>
+                <div id="ham" class="md:hidden">
+                    <i class="ri-menu-2-line cursor-pointer text-xl"></i>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!--Fin Header y Nav-->
+
+   
+
+    <script src="/dist/app.js"></script>
 </body>
+
 </html>
