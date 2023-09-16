@@ -7,9 +7,9 @@
     <title>Sazón Urbana</title>
     <!--Favicon-->
     <link rel="shortcut icon" href="/dist/img/favicon.ico" type="image/x-icon">
-   <!--Image URL-->
-   <meta property="og:image"
-   content="https://d1ujqdpfgkvqfi.cloudfront.net/favicon-generator/htdocs/favicons/2023-09-15/a67076f9642667db79f111d360557432.ico.png">
+    <!--Image URL-->
+    <meta property="og:image"
+        content="https://d1ujqdpfgkvqfi.cloudfront.net/favicon-generator/htdocs/favicons/2023-09-15/a67076f9642667db79f111d360557432.ico.png">
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -23,12 +23,12 @@
 
 <body>
     <!--Inicio Header y Nav-->
-    <header class="bg-red-600 fixed top-0 left-0 w-full z-50">
+    <header class="bg-red-600  top-0 left-0 w-full z-50">
 
         <nav class="container relative h-14 flex justify-between items-center">
 
-            <div class="">
-                <a href="" class="text-2xl uppercase font-oswald  ">Sazón <span class="text-amber-200">Urbana</span></a>
+            <div>
+                <a href="" class="text-2xl uppercase font-oswald">Sazón <span class="text-amber-200">Urbana</span></a>
             </div>
 
             <div id="nav-menu"
@@ -54,10 +54,54 @@
             </div>
         </nav>
 
+        <!--Inicio Contenido principal-->
+        <main>
+
+            <!--Sección Inicio-->
+            <section id="home">
+
+                <div class="container flex flex-col items-center gap-10 md:flex-row">
+                    <div class="mx-auto md:basis-1/2 lg:basis-2/5 md:pb-40 lg:pb-52 animate-movingY">
+                        <img src="/dist/img/hero.png" class="w-60 md:w-full" >
+                    </div>
+
+                    <div class="text-center md:basis-1/2 md:text-start lg:basis-3/5">
+                        <h1 class="text-2xl font-oswald font-bold uppercase lg:text-3xl">Sabor increíble en cada bocado</h1>
+                        <div class="separator mx-auto md:mx-0"></div>
+                        <p class="paragraph"> Todas las comidas se preparan diariamente con productos locales y de temporada. Brindamos un ambiente cálido y acogedor mientras disfrutas de nuestra comida o de algo para tomar.
+                            Nuestra parrilla da un toque especial a nuestras hamburguesas y carnes, a buen precio y con la mejor calidad.</p>
+                        <div class="text-base flex items-center justify-center gap-4 py-10 md:justify-start md:gap-20">
+                            <div class="text-center">
+                                <i class="ri-restaurant-fill text-amber-300 text-4xl"></i>
+                                <br>
+                                En el local
+                            </div>
+                            <div class="text-center">
+                                <i class="ri-walk-fill text-amber-300 text-4xl"></i>
+                                <br>
+                                Al paso
+                            </div>
+                            <div class="text-center">
+                                <i class="ri-takeaway-fill text-amber-300 text-4xl"></i>
+                                <br>
+                                Delivery
+                            </div>
+                        </div>
+
+                        <a href="" class="btn btn-primary text-red-500 font-bold">Pedir ahora</a>
+
+                    </div>
+                </div>
+
+            </section>
+            <!--Fin Sección Inicio-->
+
+        </main>
+        <!--Fin Contenido principal-->
     </header>
     <!--Fin Header y Nav-->
 
-   
+
 
     <script src="/dist/app.js"></script>
 </body>
