@@ -33,10 +33,10 @@
             </div>
 
             <div id="nav-menu"
-                class="hidden absolute top-0 left-0 w-full py-14 bg-red-600 border-b border-amber-200 md:block md:static md:border-none md:w-auto md:py-0 md:ml-auto">
+                class="hidden absolute top-0 left-0 w-full py-14 bg-red-600 border-b border-amber-200 md:block md:static md:border-none md:w-auto md:py-0 md:ml-auto z-50">
                 <ul class="flex flex-col text-center gap-3 md:flex-row">
                     <li><a href="#home" class=" nav-link hover:text-amber-200 ease-in duration-200">Inicio</a></li>
-                    <li><a href="#about" class="nav-link hover:text-amber-200 ease-in duration-200">Conócenos</a></li>
+                    <li><a href="#about" class="nav-link hover:text-amber-200 ease-in duration-200">Nosotros</a></li>
                     <li><a href="#menu" class="nav-link hover:text-amber-200 ease-in duration-200">Menú</a></li>
                     <li><a href="#review" class="nav-link hover:text-amber-200 ease-in duration-200">Reseñas</a></li>
                     <li><a href="#contact" class="nav-link hover:text-amber-200 ease-in duration-200">Contacto</a></li>
@@ -63,14 +63,18 @@
 
                 <div class="container flex flex-col items-center gap-10 md:flex-row">
                     <div class="mx-auto md:basis-1/2 lg:basis-2/5 md:pb-40 lg:pb-52 animate-movingY">
-                        <img src="./img/hero.png" class="w-60 md:w-full" >
+                        <img src="./img/hero.png" class="w-60 md:w-full">
                     </div>
 
                     <div class="text-center md:basis-1/2 md:text-start lg:basis-3/5">
-                        <h1 class="text-2xl font-oswald font-bold uppercase lg:text-3xl">Sabor increíble en cada bocado</h1>
+                        <h1 class="text-2xl font-oswald font-bold uppercase lg:text-3xl">Sabor increíble en cada bocado
+                        </h1>
                         <div class="separator mx-auto md:mx-0"></div>
-                        <p class="paragraph"> Todas las comidas se preparan diariamente con productos locales y de temporada. Brindamos un ambiente cálido y acogedor mientras disfrutas de nuestra comida o de algo para tomar.
-                            Nuestra parrilla da un toque especial a nuestras hamburguesas y carnes, a buen precio y con la mejor calidad.</p>
+                        <p class="paragraph"> Todas las comidas se preparan diariamente con productos locales y de
+                            temporada. Brindamos un ambiente cálido y acogedor mientras disfrutas de nuestra comida o de
+                            algo para tomar.
+                            Nuestra parrilla da un toque especial a nuestras hamburguesas y carnes, a buen precio y con
+                            la mejor calidad.</p>
                         <div class="text-base flex items-center justify-center gap-4 py-10 md:justify-start md:gap-20">
                             <div class="text-center">
                                 <i class="ri-restaurant-fill text-amber-300 text-4xl"></i>
@@ -96,6 +100,31 @@
 
             </section>
             <!--Fin Sección Inicio-->
+
+            <!--Inicio Sección Conócenos-->
+            <section id="about">
+                <h2 class="section-title max-w-md mx-auto text-center pb-6">Sobre Nosotros</h2>
+                <div class="container flex flex-col gap-10 md:flex-row">
+                    <div class="flex-1">
+                        <img src="img/about.jpg" class="rounded-lg">
+                    </div>
+                    <div class="flex-1">
+                        <h2 class="text-xl font-oswald font-bold uppercase md:text-2xl">Nuestro objetivo es que una vez que pruebes nuestros sabores, sigas eligiéndonos</h2>
+                        <div class="separator"></div>
+                        <p class="paragraph">Garantizamos la mejorcalidad con un proceso de elaboración y cocción a la vista, utilizando productos frescos de
+                            primer nivel, elaborados con las más rigurosas normas de higiene, en conclusión como resultado, logramos una excelente calidad en todas nuestras comidas.
+                        </p>
+                        <ul class="grid grid-cols-2 py-5 space-y-1">
+                            <li class="text-xs text-amber-200"><i class="fa-solid fa-check text-amber-400"></i> Buenos precios</li>
+                            <li class="text-xs text-amber-200" ><i class="fa-solid fa-check text-amber-400"></i> Sabores únicos</li>
+                            <li class="text-xs text-amber-200"><i class="fa-solid fa-check text-amber-400"></i> Comida fresca</li>
+                            <li class="text-xs text-amber-200"><i class="fa-solid fa-check text-amber-400"></i> El mejor servicio</li>
+                        </ul>
+                        <a href="" class="btn btn-primary text-red-500 font-bold">Saber más...</a>
+                    </div>
+                </div>
+            </section>
+            <!--Fin Sección Conócenos-->
 
         </main>
         <!--Fin Contenido principal-->
