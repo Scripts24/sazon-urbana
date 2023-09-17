@@ -24,7 +24,7 @@
 
 <body>
     <!--Inicio Header y Nav-->
-    <header class="bg-red-600  top-0 left-0 w-full z-50">
+    <header class="bg-red-600 fixed md:border-b-2 md:border-amber-400 border-b-0 top-0 left-0 w-full z-50">
 
         <nav class="container relative h-14 flex justify-between items-center">
 
@@ -54,106 +54,177 @@
                 </div>
             </div>
         </nav>
-
-        <!--Inicio Contenido principal-->
-        <main>
-
-            <!--Sección Inicio-->
-            <section id="home">
-
-                <div class="container flex flex-col items-center gap-10 md:flex-row">
-                    <div class="mx-auto md:basis-1/2 lg:basis-2/5 md:pb-40 lg:pb-52 animate-movingY">
-                        <img src="./img/hero.png" class="w-60 md:w-full">
-                    </div>
-
-                    <div class="text-center md:basis-1/2 md:text-start lg:basis-3/5">
-                        <h1 class="text-2xl font-oswald font-bold uppercase lg:text-3xl">Sabor increíble en cada bocado
-                        </h1>
-                        <div class="separator mx-auto md:mx-0"></div>
-                        <p class="paragraph"> Todas las comidas se preparan diariamente con productos locales y de
-                            temporada. Brindamos un ambiente cálido y acogedor mientras disfrutas de nuestra comida o de
-                            algo para tomar.
-                            Nuestra parrilla da un toque especial a nuestras hamburguesas y carnes, a buen precio y con
-                            la mejor calidad.</p>
-                        <div class="text-base flex items-center justify-center gap-4 py-10 md:justify-start md:gap-20">
-                            <div class="text-center">
-                                <i class="ri-restaurant-fill text-amber-300 text-4xl"></i>
-                                <br>
-                                En el local
-                            </div>
-                            <div class="text-center">
-                                <i class="ri-walk-fill text-amber-300 text-4xl"></i>
-                                <br>
-                                Al paso
-                            </div>
-                            <div class="text-center">
-                                <i class="ri-takeaway-fill text-amber-300 text-4xl"></i>
-                                <br>
-                                Delivery
-                            </div>
-                        </div>
-
-                        <a href="" class="btn btn-primary text-red-500 font-bold">Pedir ahora</a>
-
-                    </div>
-                </div>
-
-            </section>
-            <!--Fin Sección Inicio-->
-
-            <!--Inicio Sección Conócenos-->
-            <section id="about">
-                <h2 class="section-title max-w-md mx-auto text-center pb-6">Sobre Nosotros</h2>
-                <div class="container flex flex-col gap-10 md:flex-row">
-                    <div class="flex-1">
-                        <img src="img/about.jpg" class="rounded-lg">
-                    </div>
-                    <div class="flex-1">
-                        <h2 class="text-xl font-oswald font-bold uppercase md:text-2xl">Nuestro objetivo es que una vez
-                            que pruebes nuestros sabores, sigas eligiéndonos</h2>
-                        <div class="separator"></div>
-                        <p class="paragraph">Garantizamos la mejorcalidad con un proceso de elaboración y cocción a la
-                            vista, utilizando productos frescos de
-                            primer nivel, elaborados con las más rigurosas normas de higiene, en conclusión como
-                            resultado, logramos una excelente calidad en todas nuestras comidas.
-                        </p>
-                        <ul class="grid grid-cols-2 py-5 space-y-1">
-                            <li class="text-xs text-amber-200"><i class="fa-solid fa-check text-amber-400"></i> Buenos
-                                precios</li>
-                            <li class="text-xs text-amber-200"><i class="fa-solid fa-check text-amber-400"></i> Sabores
-                                únicos</li>
-                            <li class="text-xs text-amber-200"><i class="fa-solid fa-check text-amber-400"></i> Comida
-                                fresca</li>
-                            <li class="text-xs text-amber-200"><i class="fa-solid fa-check text-amber-400"></i> El mejor
-                                servicio</li>
-                        </ul>
-                        <a href="" class="btn btn-primary text-red-500 font-bold">Saber más...</a>
-                    </div>
-                </div>
-            </section>
-            <!--Fin Sección Conócenos-->
-
-            <!--Sección Contacto-->
-            <section id="contact" class="bg-amber-200 py-16">
-                <div class="container flex flex-col gap-5 md:items-center md:flex-row">
-                    <div class="space-y-4 md:flex-1"> 
-                        <h2 class="text-center text-xl font-oswald font-bold uppercase md:text-2xl text-black">Recibe nuestras novedades</h2>
-                        <p class=" text-center text-sm text-slate-950 font-bold">Con tu suscripción tendrás descuentos especiales</p>
-                    </div>
-                    <div class="flex flex-col gap-3 md:flex-row md:flex-1">
-                        <input type="email" placeholder="Dirección de email" class="p-2 text-black rounded-lg  md:w-full border focus:border-red-800 md:focus:border-red-800">
-                        <a href="" class="flex items-center justify-center gap-2 btn bg-slate-950 hover:opacity-75"><i class="fa-solid fa-paper-plane"></i>Suscríbete</a>
-                    </div>
-                </div>
-            </section>
-            <!--Fin Sección Contacto-->
-
-        </main>
-        <!--Fin Contenido principal-->
     </header>
     <!--Fin Header y Nav-->
 
+    <!--Inicio Contenido principal-->
+    <main>
 
+        <!--Sección Inicio-->
+        <section id="home">
+
+            <div class="container flex flex-col items-center gap-10 md:flex-row">
+                <div class="mx-auto md:basis-1/2 lg:basis-2/5 md:pb-40 lg:pb-52 animate-movingY">
+                    <img src="./img/hero.png" class="w-60 md:w-full">
+                </div>
+
+                <div class="text-center md:basis-1/2 md:text-start lg:basis-3/5">
+                    <h1 class="text-2xl font-oswald font-bold uppercase lg:text-3xl">Sabor increíble en cada bocado
+                    </h1>
+                    <div class="separator mx-auto md:mx-0"></div>
+                    <p class="paragraph"> Todas las comidas se preparan diariamente con productos locales y de
+                        temporada. Brindamos un ambiente cálido y acogedor mientras disfrutas de nuestra comida o de
+                        algo para tomar.
+                        Nuestra parrilla da un toque especial a nuestras hamburguesas y carnes, a buen precio y con
+                        la mejor calidad.</p>
+                    <div class="text-base flex items-center justify-center gap-4 py-10 md:justify-start md:gap-20">
+                        <div class="text-center">
+                            <i class="ri-restaurant-fill text-amber-300 text-4xl"></i>
+                            <br>
+                            En el local
+                        </div>
+                        <div class="text-center">
+                            <i class="ri-walk-fill text-amber-300 text-4xl"></i>
+                            <br>
+                            Al paso
+                        </div>
+                        <div class="text-center">
+                            <i class="ri-takeaway-fill text-amber-300 text-4xl"></i>
+                            <br>
+                            Delivery
+                        </div>
+                    </div>
+
+                    <a href="" class="btn btn-primary text-red-500 font-bold">Pedir ahora</a>
+
+                </div>
+            </div>
+
+        </section>
+        <!--Fin Sección Inicio-->
+
+        <!--Inicio Sección Conócenos-->
+        <section id="about">
+            <h2 class="section-title max-w-md mx-auto text-center pb-6">Sobre Nosotros</h2>
+            <div class="container flex flex-col gap-10 md:flex-row">
+                <div class="flex-1">
+                    <img src="img/about.jpg" class="rounded-lg">
+                </div>
+                <div class="flex-1">
+                    <h2 class="text-xl font-oswald font-bold uppercase md:text-2xl">Nuestro objetivo es que una vez
+                        que pruebes nuestros sabores, sigas eligiéndonos</h2>
+                    <div class="separator"></div>
+                    <p class="paragraph">Garantizamos la mejorcalidad con un proceso de elaboración y cocción a la
+                        vista, utilizando productos frescos de
+                        primer nivel, elaborados con las más rigurosas normas de higiene, en conclusión como
+                        resultado, logramos una excelente calidad en todas nuestras comidas.
+                    </p>
+                    <ul class="grid grid-cols-2 py-5 space-y-1">
+                        <li class="text-xs text-amber-200"><i class="fa-solid fa-check text-amber-400"></i> Buenos
+                            precios</li>
+                        <li class="text-xs text-amber-200"><i class="fa-solid fa-check text-amber-400"></i> Sabores
+                            únicos</li>
+                        <li class="text-xs text-amber-200"><i class="fa-solid fa-check text-amber-400"></i> Comida
+                            fresca</li>
+                        <li class="text-xs text-amber-200"><i class="fa-solid fa-check text-amber-400"></i> El mejor
+                            servicio</li>
+                    </ul>
+                    <a href="" class="btn btn-primary text-red-500 font-bold">Saber más...</a>
+                </div>
+            </div>
+        </section>
+        <!--Fin Sección Conócenos-->
+
+        <!--Sección Contacto-->
+        <section id="contact" class="bg-amber-200 py-16">
+            <div class="container flex flex-col gap-5 md:items-center md:flex-row">
+                <div class="space-y-4 md:flex-1">
+                    <h2 class="text-center text-xl font-oswald font-bold uppercase md:text-2xl text-black">Recibe
+                        nuestras novedades</h2>
+                    <p class=" text-center text-sm text-slate-950 font-bold">Con tu suscripción tendrás descuentos
+                        especiales</p>
+                </div>
+                <form class="flex flex-col gap-3 md:flex-row md:flex-1">
+                    <input type="email" placeholder="Correo"
+                        class="p-2 text-black rounded-lg md:w-full border focus:border-red-800 md:focus:border-red-800">
+                    <a href="" class="flex items-center justify-center gap-2 btn bg-slate-950 hover:opacity-75"><i
+                            class="fa-solid fa-paper-plane"></i>Suscríbete</a>
+                </form>
+            </div>
+        </section>
+        <!--Fin Sección Contacto-->
+
+    </main>
+    <!--Fin Contenido principal-->
+
+    <!--Footer-->
+    <footer>
+        <section class="footer">
+            <div class="container">
+                <ul class="grid grid-cols-1 items-start gap-5 pb-5 md:grid-cols-3 ">
+                    <li>
+                        <div class="space-y-3">
+                            <a href="" class="text-2xl font-oswald uppercase">Sazón <span
+                                    class="text-amber-200">Urbana</span>
+                            </a>
+
+                            <p class="text-xs">Abierto de martes a domingo, de 10 a 23:30hs.<br>Lunes cerrado. </p>
+                        </div>
+                    </li>
+
+                    <li class="space-y-8">
+
+                        <div class="space-y-2">
+                            <h3 class="text-lg uppercase font-oswald">Teléfono</h3>
+                            <p class="flex items-center gap-2 text-xs">
+                                <i class="fa-solid fa-phone text-lg text-amber-400"></i>
+                                0345-169080899045
+                            </p>
+                        </div>
+
+                        <div class="space-y-2">
+                            <h3 class="text-lg uppercase font-oswald">Correo</h3>
+                            <p class="flex items-center gap-2 text-xs">
+                                <i class="fa-solid fa-envelope text-lg text-amber-400"></i>
+                                sazon.urbana@gmail.com
+                            </p>
+                        </div>
+
+                    </li>
+
+                    <li class="space-y-8">
+
+                        <div class="space-y-2">
+                            <h3 class="text-lg uppercase font-oswald">Dirección</h3>
+                            <p class="flex items-center gap-2 text-xs">
+                                <i class="fa-solid fa-location-dot text-lg text-amber-400"></i>
+                                Av. Montes de Oca 1999, Bs. As.
+                            </p>
+                        </div>
+
+                        <div class="space-y-2">
+                            <h3 class="text-lg uppercase font-oswald">RRSS</h3>
+                            <div class="space-x-3">
+                                <i class="fa-brands fa-facebook-f text-lg text-amber-400 cursor-pointer hover:-translate-y-1 ease-in duration-200"></i>
+                                <i class="fa-brands fa-square-instagram text-lg text-amber-400 cursor-pointer hover:-translate-y-1 ease-in duration-200"></i>
+                                <i class="fa-brands fa-pinterest text-lg text-amber-400 cursor-pointer hover:-translate-y-1 ease-in duration-200"></i>
+                            </div>   
+                        </div>
+
+                    </li>
+
+                </ul>
+
+                <div class="flex flex-col items-center border-t border-amber-300 py-5 md:flex-row md:justify-between">
+                    <p class="paragraph">Developed by Patricia Atanasoff</p><br>
+                    <p class="paragraph text-center">Todos los derechos reservados &copy;
+                        <script> document.write(new Date().getFullYear());</script>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!--Fin Footer-->
 
     <script src="./app.js"></script>
 </body>

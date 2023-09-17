@@ -33,7 +33,7 @@
     
     .card-title,
     .section-title {
-        @apply text-3xl font-oswald font-bold uppercase lg:text-4xl;
+        @apply text-2xl font-oswald font-bold uppercase lg:text-4xl;
     }
 
     .card-title {
@@ -49,7 +49,7 @@
     }
 }
 
-.tabs_wrap ul li:hover,
-.tabs_wrap ul li.active {
+.tabs-wrap ul li:hover,
+.tabs-wrap ul li.active {
     @apply bg-amber-200 text-black;
 }
