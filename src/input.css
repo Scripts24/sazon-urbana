@@ -8,6 +8,19 @@
     html {
         @apply scroll-smooth;
     }
+
+    html::-webkit-scrollbar {
+        @apply w-2;
+    }
+    
+    html::-webkit-scrollbar-track {
+        @apply bg-transparent;
+    }
+    
+    html::-webkit-scrollbar-thumb {
+        @apply bg-amber-300;
+        @apply rounded-lg
+    }
     
     body {
         @apply text-white bg-red-600 tracking-wider font-dmsans;
