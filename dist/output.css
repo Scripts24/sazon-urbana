@@ -682,8 +682,16 @@ section{
   margin-bottom: 1rem;
 }
 
+.ml-2{
+  margin-left: 0.5rem;
+}
+
 .ml-4{
   margin-left: 1rem;
+}
+
+.ml-auto{
+  margin-left: auto;
 }
 
 .block{
@@ -712,6 +720,10 @@ section{
 
 .h-56{
   height: 14rem;
+}
+
+.w-14{
+  width: 3.5rem;
 }
 
 .w-40{
@@ -888,6 +900,11 @@ section{
   background-color: rgb(252 211 77 / var(--tw-bg-opacity));
 }
 
+.bg-red-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
 .bg-red-600{
   --tw-bg-opacity: 1;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
@@ -905,6 +922,10 @@ section{
 
 .p-2{
   padding: 0.5rem;
+}
+
+.p-6{
+  padding: 1.5rem;
 }
 
 .px-4{
@@ -930,6 +951,11 @@ section{
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .py-5{
@@ -990,6 +1016,11 @@ section{
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-bold{
