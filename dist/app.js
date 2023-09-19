@@ -19,6 +19,33 @@ navLink.forEach(link =>
     })
 )
 
+// Active link
+
+const activeLink = () => {
+    const sections = document.querySelectorAll("section")
+    const navLinks = document.querySelectorAll(".nav-link")
+
+    let current = "home"
+
+    sections.forEach(section => {
+
+        const sectionTop = section.offsetTop
+
+        if (this.scrollY >= sectionTop - 60) {
+            current = section.getAttribute('id')
+        }
+    })
+
+    navLinks.forEach((item) => {
+        item.classList.remove("text-amber-200")
+        if(item.href.includes(current)){
+            item.classList.add("text-amber-200")
+        }
+    })
+}
+
+window.addEventListener('scroll', activeLink)
+
 // Scroll up
 
 const scrollUp = () => {
@@ -73,17 +100,17 @@ tabs.forEach(tab => {
             item.style.display = 'none'
         })
 
-        if(tabVal == 'food'){
+        if (tabVal == 'food') {
             food.forEach(item => {
                 item.style.display = 'block'
             })
         }
-        else if (tabVal == 'snacks'){
+        else if (tabVal == 'snacks') {
             snacks.forEach(item => {
                 item.style.display = 'block'
             })
         }
-        else if (tabVal == 'beverage'){
+        else if (tabVal == 'beverage') {
             beverage.forEach(item => {
                 item.style.display = 'block'
             })
@@ -101,28 +128,29 @@ tabs.forEach(tab => {
 const html = document.querySelector('html')
 const themeBtn = document.getElementById('theme-toggle')
 
-if ( localStorage.getItem("mode") == "dark"){
+if (localStorage.getItem("mode") == "dark") {
     darkMode()
-}else{
+} else {
     lightMode()
 }
 
-themeBtn.addEventListener('click', (e) =>{
-    if ( localStorage.getItem("mode") == "light"){
+themeBtn.addEventListener('click', (e) => {
+    if (localStorage.getItem("mode") == "light") {
         darkMode()
-    }else{
+    } else {
         lightMode()
     }
 })
 
-function darkMode () {
+function darkMode() {
     html.classList.add('dark')
     themeBtn.classList.replace("ri-moon-line", "ri-sun-line")
     localStorage.setItem("mode", "dark")
 }
 
-function lightMode () {
+function lightMode() {
     html.classList.remove('dark')
-    themeBtn.classList.replace( "ri-sun-line", "ri-moon-line")
+    themeBtn.classList.replace("ri-sun-line", "ri-moon-line")
     localStorage.setItem("mode", "light")
 }
+

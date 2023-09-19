@@ -1174,11 +1174,6 @@ section{
   background-color: rgb(9 9 11 / var(--tw-bg-opacity));
 }
 
-:is(.dark .hover\:dark\:bg-amber-400):hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 191 36 / var(--tw-bg-opacity));
-}
-
 :is(.dark .hover\:dark\:bg-amber-300):hover{
   --tw-bg-opacity: 1;
   background-color: rgb(252 211 77 / var(--tw-bg-opacity));
