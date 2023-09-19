@@ -26,7 +26,7 @@
 
 <body>
     <!--Inicio Header y Nav-->
-    <header id="header" class="bg-red-600 fixed top-0 left-0 w-full z-50">
+    <header id="header" class="bg-red-600 dark:bg-black fixed top-0 left-0 w-full z-50">
 
         <nav class="container relative h-14 flex justify-between items-center">
 
@@ -35,7 +35,7 @@
             </div>
 
             <div id="nav-menu"
-                class="hidden absolute top-0 left-0 w-full py-14 bg-red-600 border-b border-amber-400 md:block md:static md:border-none md:w-auto md:py-0 md:ml-auto z-50">
+                class="hidden absolute top-0 left-0 w-full py-14 bg-red-600 dark:bg-black border-b border-amber-400 md:block md:static md:border-none md:w-auto md:py-0 md:ml-auto z-50">
                 <ul class="flex flex-col text-center gap-3 md:flex-row">
                     <li><a href="#home" class=" nav-link hover:text-amber-200 ease-in duration-200">Inicio</a></li>
                     <li><a href="#about" class="nav-link hover:text-amber-200 ease-in duration-200">Nosotros</a></li>
@@ -50,7 +50,8 @@
             </div>
 
             <div class="flex items-center gap-5">
-                <i class="ri-moon-line cursor-pointer ml-4 text-xl"></i>
+                <i id="theme-toggle" class="ri-moon-line cursor-pointer ml-4 text-xl"></i>
+
                 <div id="ham" class="md:hidden">
                     <i class="ri-menu-2-line cursor-pointer text-xl"></i>
                 </div>
@@ -146,10 +147,10 @@
 
                     <div class="tabs-wrap mb-4">
                         <ul class="flex flex-wrap justify-center gap-3 py-2">
-                            <li data-tabs="all" class="btn px-4   bg-red-700">Todo</li>
-                            <li data-tabs="food" class="btn px-4  bg-red-700">Platos</li>
-                            <li data-tabs="snacks" class="btn px-4  bg-red-700">Minutas</li>
-                            <li data-tabs="beverage" class="btn px-4  bg-red-700">Bebidas</li>
+                            <li data-tabs="all" class="btn px-4   bg-red-700 dark:bg-zinc-950">Todo</li>
+                            <li data-tabs="food" class="btn px-4  bg-red-700 dark:bg-zinc-950">Platos</li>
+                            <li data-tabs="snacks" class="btn px-4  bg-red-700 dark:bg-zinc-950">Minutas</li>
+                            <li data-tabs="beverage" class="btn px-4  bg-red-700 dark:bg-zinc-950">Bebidas</li>
                         </ul>
                     </div>
                 </div>
@@ -159,7 +160,7 @@
 
                         <li class="item food">
                             <div
-                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl hover:bg-amber-200 ease-linear duration-200">
+                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl dark:bg-zinc-950  hover:bg-amber-200 hover:dark:bg-amber-300 ease-linear duration-200">
                                 <img src="img/menu/platos/carne.png"
                                     class="w-40 md:w-48 lg:w-24 hover:scale-110 ease-linear duration-200">
                             </div>
@@ -175,7 +176,7 @@
 
                         <li class="item food">
                             <div
-                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl hover:bg-amber-200 ease-linear duration-200">
+                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl dark:bg-zinc-950  hover:bg-amber-200 hover:dark:bg-amber-300 ease-linear duration-200">
                                 <img src="img/menu/platos/fajita.png"
                                     class="w-40 md:w-48 lg:w-24 hover:scale-110 ease-linear duration-200">
                             </div>
@@ -191,7 +192,7 @@
 
                         <li class="item food">
                             <div
-                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl hover:bg-amber-200 ease-linear duration-200">
+                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl dark:bg-zinc-950  hover:bg-amber-200 hover:dark:bg-amber-300 ease-linear duration-200">
                                 <img src="img/menu/platos/panchos.png"
                                     class="w-40 md:w-48 lg:w-24 hover:scale-110 ease-linear duration-200">
                             </div>
@@ -207,7 +208,7 @@
 
                         <li class="item food">
                             <div
-                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl hover:bg-amber-200 ease-linear duration-200">
+                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl dark:bg-zinc-950  hover:bg-amber-200 hover:dark:bg-amber-300 ease-linear duration-200">
                                 <img src="img/menu/platos/pizza.png"
                                     class="w-40 md:w-48 lg:w-24 hover:scale-110 ease-linear duration-200">
                             </div>
@@ -223,7 +224,7 @@
 
                         <li class="item food">
                             <div
-                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl hover:bg-amber-200 ease-linear duration-200">
+                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl dark:bg-zinc-950  hover:bg-amber-200 hover:dark:bg-amber-300 ease-linear duration-200">
                                 <img src="img/menu/platos/pollo-frito.png"
                                     class="w-40 md:w-48 lg:w-24 hover:scale-110 ease-linear duration-200">
                             </div>
@@ -239,7 +240,7 @@
 
                         <li class="item food">
                             <div
-                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl hover:bg-amber-200 ease-linear duration-200">
+                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl dark:bg-zinc-950  hover:bg-amber-200 hover:dark:bg-amber-300 ease-linear duration-200">
                                 <img src="img/menu/platos/sandwich.png"
                                     class="w-40 md:w-48 lg:w-24 hover:scale-110 ease-linear duration-200">
                             </div>
@@ -255,7 +256,7 @@
 
                         <li class="item food">
                             <div
-                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl hover:bg-amber-200 ease-linear duration-200">
+                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl dark:bg-zinc-950  hover:bg-amber-200 hover:dark:bg-amber-300 ease-linear duration-200">
                                 <img src="img/menu/platos/sushi.png"
                                     class="w-40 md:w-48 lg:w-24 hover:scale-110 ease-linear duration-200">
                             </div>
@@ -271,7 +272,7 @@
 
                         <li class="item food">
                             <div
-                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl hover:bg-amber-200 ease-linear duration-200">
+                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl dark:bg-zinc-950  hover:bg-amber-200 hover:dark:bg-amber-300 ease-linear duration-200">
                                 <img src="img/menu/platos/tacos.png"
                                     class="w-40 md:w-48 lg:w-24 hover:scale-110 ease-linear duration-200">
                             </div>
@@ -289,7 +290,7 @@
 
                         <li class="item snacks">
                             <div
-                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl hover:bg-amber-200 ease-linear duration-200">
+                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl dark:bg-zinc-950  hover:bg-amber-200 hover:dark:bg-amber-300 ease-linear duration-200">
                                 <img src="img/menu/snacks/bravas.png"
                                     class="w-40 md:w-48 lg:w-24 hover:scale-110 ease-linear duration-200">
                             </div>
@@ -305,7 +306,7 @@
 
                         <li class="item snacks">
                             <div
-                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl hover:bg-amber-200 ease-linear duration-200">
+                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl dark:bg-zinc-950  hover:bg-amber-200 hover:dark:bg-amber-300 ease-linear duration-200">
                                 <img src="img/menu/snacks/con-salsa.png"
                                     class="w-40 md:w-48 lg:w-24 hover:scale-110 ease-linear duration-200">
                             </div>
@@ -321,7 +322,7 @@
 
                         <li class="item snacks">
                             <div
-                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl hover:bg-amber-200 ease-linear duration-200">
+                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl dark:bg-zinc-950  hover:bg-amber-200 hover:dark:bg-amber-300 ease-linear duration-200">
                                 <img src="img/menu/snacks/cono.png"
                                     class="w-40 md:w-48 lg:w-24 hover:scale-110 ease-linear duration-200">
                             </div>
@@ -337,7 +338,7 @@
 
                         <li class="item snacks">
                             <div
-                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl hover:bg-amber-200 ease-linear duration-200">
+                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl dark:bg-zinc-950  hover:bg-amber-200 hover:dark:bg-amber-300 ease-linear duration-200">
                                 <img src="img/menu/snacks/ensaladas.png"
                                     class="w-40 md:w-48 lg:w-24 hover:scale-110 ease-linear duration-200">
                             </div>
@@ -355,7 +356,7 @@
 
                         <li class="item beverage">
                             <div
-                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl hover:bg-amber-200 ease-linear duration-200">
+                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl dark:bg-zinc-950  hover:bg-amber-200 hover:dark:bg-amber-300 ease-linear duration-200">
                                 <img src="img/menu/bebidas/batidos.png"
                                     class="w-40 md:w-48 lg:w-24 hover:scale-110 ease-linear duration-200">
                             </div>
@@ -371,7 +372,7 @@
 
                         <li class="item beverage">
                             <div
-                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl hover:bg-amber-200 ease-linear duration-200">
+                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl dark:bg-zinc-950  hover:bg-amber-200 hover:dark:bg-amber-300 ease-linear duration-200">
                                 <img src="img/menu/bebidas/cafe.png"
                                     class="w-40 md:w-48 lg:w-24 hover:scale-110 ease-linear duration-200">
                             </div>
@@ -387,7 +388,7 @@
 
                         <li class="item beverage">
                             <div
-                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl hover:bg-amber-200 ease-linear duration-200">
+                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl dark:bg-zinc-950  hover:bg-amber-200 hover:dark:bg-amber-300 ease-linear duration-200">
                                 <img src="img/menu/bebidas/cervezas.png"
                                     class="w-40 md:w-48 lg:w-24 hover:scale-110 ease-linear duration-200">
                             </div>
@@ -403,7 +404,7 @@
 
                         <li class="item beverage">
                             <div
-                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl hover:bg-amber-200 ease-linear duration-200">
+                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl dark:bg-zinc-950  hover:bg-amber-200 hover:dark:bg-amber-300 ease-linear duration-200">
                                 <img src="img/menu/bebidas/coctel.png"
                                     class="w-40 md:w-48 lg:w-24 hover:scale-110 ease-linear duration-200">
                             </div>
@@ -419,7 +420,7 @@
 
                         <li class="item beverage">
                             <div
-                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl hover:bg-amber-200 ease-linear duration-200">
+                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl dark:bg-zinc-950  hover:bg-amber-200 hover:dark:bg-amber-300  ease-linear duration-200">
                                 <img src="img/menu/bebidas/exprimidos.png"
                                     class="w-40 md:w-48 lg:w-24 hover:scale-110 ease-linear duration-200">
                             </div>
@@ -435,7 +436,7 @@
 
                         <li class="item beverage">
                             <div
-                                class="h-56 lg:h-40 grid place-items-center bg-red-700 rounded-3xl hover:bg-amber-200 ease-linear duration-200">
+                                class="h-56 lg:h-40 grid place-items-center bg-red-700 dark:bg-zinc-950 rounded-3xl hover:bg-amber-200 hover:dark:bg-amber-300 ease-linear duration-200">
                                 <img src="img/menu/bebidas/gaseosas.png"
                                     class="w-40 md:w-48 lg:w-24 hover:scale-110 ease-linear duration-200">
                             </div>
@@ -457,7 +458,7 @@
         <!--Fin Sección Menú-->
 
         <!--Inicio Sección Reseñas-->
-        <section id="review" class="bg-red-500 py-20">
+        <section id="review" class="bg-red-500 py-20 dark:bg-zinc-950">
             <div class="container">
                 <div class="max-w-md mx-auto text-center">
                     <h2 class="section-title">Reseñas</h2>
@@ -468,7 +469,7 @@
                     <ul class="swiper-wrapper">
 
                         <li class="swiper-slide">
-                            <div class="flex flex-col gap-5 bg-red-600 rounded-lg p-6">
+                            <div class="flex flex-col gap-5 bg-red-600 dark:bg-black rounded-lg p-6">
                                 <p class="paragraph">La comida es abundante y rica. Los camareros son amables. Ubicación perfecta. Y la burguer de la casa, recomendadisima.</p>
                                 <div class="flex items-center">
                                     <img src="img/reseñas/1.jpg" class="w-14 h-14 rounded-full">
@@ -482,7 +483,7 @@
                         </li>
 
                         <li class="swiper-slide">
-                            <div class="flex flex-col gap-5 bg-red-600 rounded-lg p-6">
+                            <div class="flex flex-col gap-5 bg-red-600 dark:bg-black rounded-lg p-6">
                                 <p class="paragraph">Fuimos casi por casualidad y salimos encantados. El sushi estaba buenísimo. Económico, abundante y exquisito.</p>
                                 <div class="flex items-center">
                                     <img src="img/reseñas/2.jpg" class="w-14 h-14 rounded-full">
@@ -496,7 +497,7 @@
                         </li>
 
                         <li class="swiper-slide">
-                            <div class="flex flex-col gap-5 bg-red-600 rounded-lg p-6">
+                            <div class="flex flex-col gap-5 bg-red-600 dark:bg-black rounded-lg p-6">
                                 <p class="paragraph">Platos combinados bien de precio en plena zona céntrica. Sin pretensiones y personal amable. Las raciones son generosas</p>
                                 <div class="flex items-center">
                                     <img src="img/reseñas/3.jpg" class="w-14 h-14 rounded-full">
@@ -510,7 +511,7 @@
                         </li>
 
                         <li class="swiper-slide">
-                            <div class="flex flex-col gap-5 bg-red-600 rounded-lg p-6">
+                            <div class="flex flex-col gap-5 bg-red-600 dark:bg-black rounded-lg p-6">
                                 <p class="paragraph">Paramos aquí porque tenían unos precios bastante buenos para estar donde está. Estaba todo buenísimo, recomendable.</p>
                                 <div class="flex items-center">
                                     <img src="img/reseñas/4.jpg" class="w-14 h-14 rounded-full">
@@ -524,7 +525,7 @@
                         </li>
 
                         <li class="swiper-slide">
-                            <div class="flex flex-col gap-5 bg-red-600 rounded-lg p-6">
+                            <div class="flex flex-col gap-5 bg-red-600 dark:bg-black rounded-lg p-6">
                                 <p class="paragraph"> La atención por parte de los camareros muy buena. Bastante rápidos para atender la cantidad de gente que tenían.</p>
                                 <div class="flex items-center">
                                     <img src="img/reseñas/5.jpg" class="w-14 h-14 rounded-full">
@@ -538,7 +539,7 @@
                         </li>
 
                         <li class="swiper-slide">
-                            <div class="flex flex-col gap-5 bg-red-600 rounded-lg p-6">
+                            <div class="flex flex-col gap-5 bg-red-600 dark:bg-black rounded-lg p-6">
                                 <p class="paragraph">Si quieres comer o cenar a buen precio un día cualquiera este es tu sitio. Destaco que todo el personal es muy amable.</p>
                                 <div class="flex items-center">
                                     <img src="img/reseñas/6.jpg" class="w-14 h-14 rounded-full">
