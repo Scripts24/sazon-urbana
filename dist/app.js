@@ -23,7 +23,7 @@ navLink.forEach(link =>
 
 const activeLink = () => {
     const sections = document.querySelectorAll("section")
-    const navLinks = document.querySelectorAll(".nav-link")
+    const navLinks = documentquerySelectorAll(".nav-link")
 
     let current = "home"
 
@@ -154,3 +154,23 @@ function lightMode() {
     localStorage.setItem("mode", "light")
 }
 
+// ScrollReveal
+
+const sr = ScrollReveal({
+    origin: "top",
+    distance: "60px",
+    duration: 2500,
+    delay: 400
+})
+
+sr.reveal(".home-img")
+sr.reveal(".home-text", { origin: "bottom"})
+
+sr.reveal(".about-img", { origin: "bottom"})
+sr.reveal(".about-text", { origin: "top"})
+
+sr.reveal(".list-menu", { origin: "left"})
+
+sr.reveal(".review-content", { origin: "right"})
+
+sr.reveal(".footer")

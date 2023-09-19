@@ -68,10 +68,10 @@
 
             <div class="container flex flex-col items-center gap-10 md:flex-row">
                 <div class="mx-auto md:basis-1/2 lg:basis-2/5 md:pb-40 lg:pb-52 animate-movingY">
-                    <img src="./img/hero.png" class="w-60 md:w-full">
+                    <img src="./img/hero.png" class="home-img w-60 md:w-full">
                 </div>
 
-                <div class="text-center md:basis-1/2 md:text-start lg:basis-3/5">
+                <div class="home-text text-center md:basis-1/2 md:text-start lg:basis-3/5">
                     <h1 class="text-2xl font-oswald font-bold uppercase lg:text-3xl">Sabor increíble en cada bocado
                     </h1>
                     <div class="separator mx-auto md:mx-0"></div>
@@ -110,10 +110,10 @@
         <section id="about">
             <h2 class="section-title max-w-md mx-auto text-center pb-6">Sobre Nosotros</h2>
             <div class="container flex flex-col gap-10 md:flex-row">
-                <div class="flex-1">
+                <div class="about-img flex-1">
                     <img src="img/about.jpg" class="rounded-lg">
                 </div>
-                <div class="flex-1">
+                <div class="about-text flex-1">
                     <h2 class="text-xl font-oswald font-bold uppercase md:text-2xl">Nuestro objetivo es que una vez
                         que pruebes nuestros sabores, sigas eligiéndonos</h2>
                     <div class="separator"></div>
@@ -155,7 +155,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="list-menu">
                     <ul class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 lg:gap-12 text-center">
 
                         <li class="item food">
@@ -459,7 +459,7 @@
 
         <!--Inicio Sección Reseñas-->
         <section id="review" class="bg-red-500 py-20 dark:bg-zinc-950">
-            <div class="container">
+            <div class="review-content container">
                 <div class="max-w-md mx-auto text-center">
                     <h2 class="section-title">Reseñas</h2>
                     <div class="separator mx-auto"></div>
@@ -658,6 +658,8 @@
         class="fixed right-4 -bottom-1/2 bg-amber-300 inline-block px-4 py-2 rounded-full text-lg text-red-600 z-50 hover:translate-y-1 ease-in duration-200">
         <i class="fa-solid fa-arrow-up"></i>
     </a>
+    <!--ScrollReveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <!--Swiper-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!--Inicializar Swiper-->
